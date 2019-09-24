@@ -1,4 +1,5 @@
 import wx
+import subprocess
 from speak import *
 import time
 
@@ -36,7 +37,7 @@ class TestFrame(wx.Frame):
     def OnClick(self, event):
         content = "How to you spell your name?"
         try:
-            speak(content)
+            subprocess.call(["python", "speak.py"])
         except:
             self.button2.SetLabel("Error")
 
