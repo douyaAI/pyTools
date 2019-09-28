@@ -7,7 +7,7 @@ def speak(content, isMale):
 
 # content = "How would you get undergraduates excited about the field of X?"
     engine = pyttsx3.init()
-    engine.setProperty('rate', 220)
+    engine.setProperty('rate', 200)
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[10].id)
     engine.setProperty('voice', voices[7].id)
